@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Белы Гусь — ресторан белорусской кухни в Минске. Драники, мачанка, колдуны и панский борщ. Партизанский просп., 87, ежедневно 12:00–23:00.">
+    <title>Белы Гусь — родная кухня</title>
+    <link rel="icon" type="image/png" href="./img/goose.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="#top" class="header__logo" aria-label="Белы Гусь — на главную">
+                <img src="./img/goose.png" alt="">
+                <span>Белы Гусь</span>
+            </a>
+
+            <nav class="header__nav" id="nav">
+                <a href="#about">О нас</a>
+                <a href="#dishes">Блюда</a>
+                <a href="#menu">Меню</a>
+                <a href="#gallery">Атмосфера</a>
+                <a href="#contacts">Контакты</a>
+                <a href="tel:+375447357208" class="btn btn--red header__nav-cta">Забронировать</a>
+            </nav>
+
+            <div class="header__right">
+                <span class="header__time">12:00 — 23:00</span>
+                <a href="tel:+375447357208" class="btn btn--red">Забронировать</a>
+            </div>
+
+            <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- Главный экран -->
+        <section class="hero">
+            <img class="hero__bg" src="./img/hall.webp" alt="Зал ресторана с камином">
+            <div class="hero__content">
+                <span class="eyebrow eyebrow--light">Ресторан белорусской кухни · Минск</span>
+                <h1>Белорусская кухня <em>с&nbsp;душой</em></h1>
+                <p>Драники со сметаной, мачанка, колдуны и панский борщ. Готовим как дома, встречаем как родных.</p>
+                <div class="hero__actions">
+                    <a href="tel:+375447357208" class="btn btn--red btn--lg">Забронировать стол</a>
+                    <a href="#menu" class="btn btn--ghost btn--lg">Смотреть меню</a>
+                </div>
+                <ul class="hero__chips">
+                    <li>Ежедневно 12:00 — 23:00</li>
+                    <li>Партизанский просп., 87</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Кружки-хайлайты как в Instagram -->
+        <section class="highlights" aria-label="Разделы">
+            <div class="highlights__track">
+                <button class="highlight" data-target="#contacts">
+                    <span class="highlight__ring"><img src="./img/interior-3.webp" alt=""></span>
+                    <span class="highlight__label">Гости</span>
+                </button>
+                <button class="highlight" data-target="#gallery" data-photo="3">
+                    <span class="highlight__ring"><img src="./img/interior-1-2.webp" alt=""></span>
+                    <span class="highlight__label">Терраса</span>
+                </button>
+                <button class="highlight" data-target="#dishes">
+                    <span class="highlight__ring"><img src="./img/dishes/borsch.webp" alt=""></span>
+                    <span class="highlight__label">Кухня</span>
+                </button>
+                <button class="highlight" data-target="#menu">
+                    <span class="highlight__ring highlight__ring--logo"><img src="./img/goose.png" alt=""></span>
+                    <span class="highlight__label">Меню</span>
+                </button>
+                <button class="highlight" data-target="#gallery">
+                    <span class="highlight__ring"><img src="./img/interior-1-1.webp" alt=""></span>
+                    <span class="highlight__label">Атмосфера</span>
+                </button>
+            </div>
+        </section>
+
+        <div class="ornament" aria-hidden="true"></div>
+
+        <!-- О нас -->
+        <section class="about section" id="about">
+            <div class="container about__grid">
+                <div class="about__photo reveal">
+                    <img src="./img/interior-1.webp" alt="Барная стойка из белого камня">
+                </div>
+                <div class="about__text reveal">
+                    <span class="eyebrow">Наша история</span>
+                    <h2>Почему «Белы гусь»?</h2>
+                    <p>Раньше почти в каждом белорусском дворе жили гуси: помогали по хозяйству, сторожили дом и
+                        украшали праздничный стол. А белый гусь всегда считался особенным: красивым, гордым, будто
+                        сама чистота.</p>
+                    <p>Когда мы выбирали имя ресторану, нам хотелось вернуться к этим простым и родным вещам. Туда,
+                        где еду готовят от сердца, а дверь всегда открыта для гостей.</p>
+                    <blockquote>Самое вкусное — то, что возвращает нас домой.</blockquote>
+                    <ul class="about__facts">
+                        <li><strong>Родная кухня</strong><span>рецепты бабушек без лишних изысков</span></li>
+                        <li><strong>Зал с камином</strong><span>льняной текстиль и тёплый свет</span></li>
+                        <li><strong>Сет «6 соток»</strong><span>шесть настоек с мясной закуской</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Фирменные блюда -->
+        <section class="dishes section section--cream" id="dishes">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="eyebrow">Кухня</span>
+                    <h2>Фирменные блюда</h2>
+                    <p>То, за чем к нам возвращаются. Цены в белорусских рублях.</p>
+                </div>
+                <div class="dishes__grid" id="dishes-grid"></div>
+            </div>
+        </section>
+
+        <div class="ornament" aria-hidden="true"></div>
+
+        <!-- Полное меню -->
+        <section class="menu section" id="menu">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="eyebrow">Познакомьтесь с нами ближе</span>
+                    <h2>Меню ресторана</h2>
+                </div>
+                <div class="menu__tabs" id="menu-tabs" role="tablist"></div>
+                <div class="menu__panel" id="menu-panel" role="tabpanel"></div>
+            </div>
+        </section>
+
+        <!-- Атмосфера: лента как в Instagram -->
+        <section class="gallery section section--cream" id="gallery">
+            <div class="container">
+                <div class="profile reveal">
+                    <img class="profile__avatar" src="./img/goose.png" alt="">
+                    <div class="profile__info">
+                        <div class="profile__row">
+                            <h2 class="profile__name">bely__gus</h2>
+                            <a href="https://www.instagram.com/bely__gus/" target="_blank" rel="noopener"
+                                class="btn btn--red btn--sm">Подписаться</a>
+                        </div>
+                        <p><strong>Белы Гусь · Родная кухня</strong></p>
+                        <p>Ресторан белорусской кухни в Минске. Бронь в директ или по телефону.</p>
+                    </div>
+                </div>
+
+                <div class="feed" id="feed">
+                    <button class="feed__item"><img src="./img/hall.webp" alt="Зал с камином"></button>
+                    <button class="feed__item"><img src="./img/dishes/borsch.webp" alt="Панский борщ с салом и хлебом"></button>
+                    <button class="feed__item"><img src="./img/interior-1-1.webp" alt="Камин"></button>
+                    <button class="feed__item"><img src="./img/interior-1-2.webp" alt="Столик у окна"></button>
+                    <button class="feed__item"><img src="./img/interior-2.webp" alt="Светильники и декор стен"></button>
+                    <button class="feed__item"><img src="./img/interior-1.webp" alt="Барная стойка"></button>
+                    <button class="feed__item"><img src="./img/interior-3.webp" alt="Сервированный стол"></button>
+                    <button class="feed__item"><img src="./img/interior-4.webp" alt="Колосья и салфетница"></button>
+                    <a class="feed__item feed__item--cta" href="https://www.instagram.com/bely__gus/" target="_blank"
+                        rel="noopener">
+                        <span>Ещё больше фото</span>
+                        <strong>@bely__gus</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts section" id="contacts">
+            <div class="container contacts__grid">
+                <div class="contacts__info reveal">
+                    <span class="eyebrow">Ждём в гости</span>
+                    <h2>Забронировать стол</h2>
+                    <p>Позвоните нам или напишите в директ Instagram. Подберём столик у камина или у окна.</p>
+                    <dl class="contacts__list">
+                        <div>
+                            <dt>Телефон</dt>
+                            <dd><a href="tel:+375447357208">+375 (44) 735-72-08</a></dd>
+                        </div>
+                        <div>
+                            <dt>Адрес</dt>
+                            <dd>Минск, Партизанский просп., 87</dd>
+                        </div>
+                        <div>
+                            <dt>Часы работы</dt>
+                            <dd>Ежедневно 12:00 — 23:00</dd>
+                        </div>
+                    </dl>
+                    <div class="contacts__actions">
+                        <a href="tel:+375447357208" class="btn btn--red btn--lg">Позвонить</a>
+                        <a href="https://www.instagram.com/bely__gus/" target="_blank" rel="noopener"
+                            class="btn btn--outline btn--lg">Instagram</a>
+                        <a href="https://www.tiktok.com/@bely_gus" target="_blank" rel="noopener"
+                            class="btn btn--outline btn--lg">TikTok</a>
+                    </div>
+                </div>
+                <div class="contacts__map reveal">
+                    <iframe title="Белы Гусь на карте"
+                        src="https://yandex.ru/map-widget/v1/?ll=27.636000%2C53.875000&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCZoyMTAyMzIzODU4Ek7QkdC10LvQsNGA0YPRgdGMLCDQnNGW0L3RgdC6LCDQn9Cw0YDRgtGL0LfQsNC90YHQutGWINC_0YDQsNGB0L_QtdC60YIsIDg3IgoN6S8WQhVvXF5C&z=17"
+                        loading="lazy" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="ornament ornament--light" aria-hidden="true"></div>
+        <div class="container footer__inner">
+            <img src="./img/logo.png" alt="Белы Гусь" class="footer__logo">
+            <p>Родная кухня · Минск, Партизанский просп., 87</p>
+            <p class="footer__copy">© 2026 Белы Гусь. Все права защищены</p>
+        </div>
+    </footer>
+
+    <!-- Лайтбокс -->
+    <div class="lightbox" id="lightbox" hidden>
+        <button class="lightbox__close" aria-label="Закрыть">&times;</button>
+        <button class="lightbox__arrow lightbox__arrow--prev" aria-label="Предыдущее фото">&#10094;</button>
+        <img class="lightbox__img" id="lightbox-img" src="" alt="">
+        <button class="lightbox__arrow lightbox__arrow--next" aria-label="Следующее фото">&#10095;</button>
+    </div>
+
+    <!-- Проверка 18+ -->
+    <div class="modal" id="age-modal" hidden>
+        <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="age-title">
+            <h3 id="age-title">Вам уже есть 18?</h3>
+            <p>Барная карта содержит алкогольные напитки и доступна только совершеннолетним гостям.</p>
+            <div class="modal__actions">
+                <button class="btn btn--red" id="age-yes">Да, мне есть 18</button>
+                <button class="btn btn--outline" id="age-no">Нет</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
